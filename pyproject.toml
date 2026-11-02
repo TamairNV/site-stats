@@ -1,0 +1,16 @@
+[project]
+name = "site-stats"
+version = "0.1.0"
+description = "Drop-in, admin-only traffic and security stats page for FastAPI apps"
+requires-python = ">=3.10"
+dependencies = ["fastapi>=0.100"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["sitestats"]
+
+[tool.setuptools.package-data]
+sitestats = ["static/*.js"]
